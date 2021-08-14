@@ -1,10 +1,75 @@
----
-title: 台北當代藝術展
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>
+    台北當代藝術展
+  </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="border border-dark">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-8 offset-2 col-md-4 offset-md-4 text-center">
+            <h1 class="fs-3 mb-0"><a href="#" class="text-primary d-block py-7">EXHIBINECTION</a></h1>
+          </div>
+          <div class="col-2 col-md-4">
+            <ul class="d-flex list-unstyled justify-content-end mb-0">
+              <li><a href="#" class="d-block px-4 py-5 d-none d-md-block">Sign in</a>
+              </li>
+              <li><a href="#" class="d-block px-4 py-5 d-none d-md-block">Sign in</a>
+              </li>
+              <li><a href="#" class="link-dark d-block ps-4 py-5 position-relative">
+                  <span class="material-icons num-count">
+                    confirmation_number
+                  </span>
+                  <div class="nav-counter">3</div>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="header-banner d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 offset-md-1">
+            <h2 class="title fs-5 text-white fw-bold lh-base">台北當代藝術展</h2>
+            <div class="date fs-2 text-white fw-bold mb-3">01 JUN - 31 OCT</div>
+            <div class="d-flex">
+              <button class="btn btn-secondary w-50 me-3 me-md-2">購買票券</button>
+              <button class="btn btn-outline-light w-50">詳細資訊</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-scroller border border-dark">
+      <nav class="container nav d-flex justify-content-unset justify-content-md-center text-dark"
+        aria-label="Secondary navigation">
+        <a class="nav-link link-dark my-2" aria-current="page" href="#">音樂</a>
+        <a class="nav-link link-dark my-2" href="#">戲劇</a>
+        <a class="nav-link link-dark my-2" href="#">設計</a>
+        <a class="nav-link link-dark my-2" href="#">藝術</a>
+        <a class="nav-link link-dark my-2" href="#">美食</a>
+        <a class="nav-link link-dark my-2" href="#">旅遊</a>
+        <a class="nav-link link-dark my-2" href="#">電影</a>
+        <a class="nav-link link-dark my-2" href="#">親子</a>
+        <a class="nav-link link-dark my-2" href="#">期間限定</a>
+      </nav>
+    </div>
+  </header>
+
+  
 <main>
     <section class="popular-exhibitions">
         <div class="container">
@@ -220,3 +285,38 @@ current: index
         </div>
     </section>
 </main>
+
+    <footer>
+      <div class="footer-banner d-flex align-items-end pb-6">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <p class="fs-3 fs-md-5 text-white fw-bold mb-5 mb-md-3">想收到最新消息嗎？<br> 快訂閱我們！</p>
+              <div class="input-group">
+                <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Recipient's username"
+                  aria-describedby="button-addon2">
+                <button class="btn btn-secondary footer-subscribe" type="button" id="button-addon2">訂閱</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-white container d-md-flex justify-content-md-between py-4 py-md-7">
+        <div class="d-md-flex align-items-md-center">
+          <p class="me-md-2 fs-3">EXHIBINECTION</p>
+          <p>© 2020. All Rights Reserved.</p>
+        </div>
+
+        <ul class="d-md-flex align-items-md-center">
+          <li><a href="#" class="d-none d-md-block px-3 py-5">Sign in</a></li>
+          <li><a href="#" class="d-none d-md-block px-3 py-5">Sign in</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
