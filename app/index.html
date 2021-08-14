@@ -1,58 +1,222 @@
 ---
-title: Boostrap Index
+title: 台北當代藝術展
 layout: ./app/layout.ejs
 engine: ejs
 current: index
 ---
 
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">
-    A simple primary alert—check it out!
-  </div>
-  <div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
-  </div>
-  <div class="alert alert-success" role="alert">
-    A simple success alert—check it out!
-  </div>
-  <div class="alert alert-danger" role="alert">
-    A simple danger alert—check it out!
-  </div>
-  <div class="alert alert-warning" role="alert">
-    A simple warning alert—check it out!
-  </div>
-  <div class="alert alert-info" role="alert">
-    A simple info alert—check it out!
-  </div>
-  <div class="alert alert-light" role="alert">
-    A simple light alert—check it out!
-  </div>
-  <div class="alert alert-dark" role="alert">
-    A simple dark alert—check it out!
-  </div>
-</div>
+<main>
+    <section class="popular-exhibitions">
+        <div class="container">
+            <h2 class="fs-5 fw-bold mb-2 mb-md-6">熱門特展</h2>
+            <div class="card bg-light mb-4 mb-md-5 border-0">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="ratio ratio-1x1">
+                            <img src="./assets/images/1.jpg" alt="">
+                        </div>
+                    </div>
 
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  Launch demo modal
-</button>
+                    <div class="card-body col-12 col-md-6">
+                        <div class="d-md-flex flex-md-column justify-content-md-end">
+                            <div>
+                                <div class="d-flex align-items-center mb-1">
+                                    <h3 class="fs-2 me-3 mb-md-1 fw-bold">2020 台味設計展</h3>
+                                    <div class="d-flex d-md-none">
+                                        <img src="./assets/images/facebook-24px.svg" class="me-8" alt="facebook">
+                                        <p class="w-100">01 JUN &ndash; 31 OCT</p>
+                                    </div>
+                                </div>
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
+                                <span class="fs-2 mb-md-2 mb-2">$350</span>
+                                <p class="fs-md-2  mb-5">
+                                    一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
+                                </p>
+                            </div>
+                            <div class="d-flex">
+                                <button class="btn btn-primary me-1 me-md-2">購買票券</button>
+                                <button class="btn btn-outline-primary">收藏展覽</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="activity-time d-none d-md-block offset-md-1 col-md-1">
+                        <div class="fs-md-2 d-flex mb-md-8 ">01 <br> JUN <br> | <br> 31 <br>OCT</div>
+                        <a href="#">
+                            <img src="./assets/images/facebook-24px.svg" alt="facebook">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-light mb-4 mb-md-5 border-0">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="ratio ratio-1x1">
+                            <img src="./assets/images/2.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="card-body col-12 col-md-6">
+                        <div class="d-flex align-items-center mb-1">
+                            <h3 class="fs-2 me-3 mb-md-1 fw-bold">No.22 線上設計展</h3>
+                            <div class="d-flex d-md-none">
+                                <img src="./assets/images/facebook-24px.svg" class="me-8" alt="facebook">
+                                <p class="w-100">01 JUN &ndash; 31 OCT</p>
+                            </div>
+                        </div>
+
+                        <span class="fs-2 mb-md-2 mb-2">$350</span>
+                        <p class="fs-md-2 mb-md-8 mb-5">
+                            這是一個專屬於設計系畢業生的展覽，沒有華麗的名號、沒有浮誇的獎賞。讓我們用作品與理念，去碰撞真實世界裡的各種問題，創造更多美好的人事物。讓這個地球、這個世界變成每一個人心目中的理想鄉。
+                        </p>
+                        <div class="d-flex">
+                            <button class="btn btn-primary me-1 me-md-2">購買票券</button>
+                            <button class="btn btn-outline-primary">收藏展覽</button>
+                        </div>
+                    </div>
+                    <div class="activity-time d-none d-md-block offset-md-1 col-md-1">
+                        <div class="fs-md-2 d-flex mb-md-8 ">01 <br> JUN <br> | <br> 31 <br>OCT</div>
+                        <a href="#">
+                            <img src="./assets/images/facebook-24px.svg" alt="facebook">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card bg-light border-0">
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <div class="ratio ratio-1x1">
+                            <img src="./assets/images/3.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="card-body col-12 col-md-6">
+                        <div class="d-flex align-items-center mb-1">
+                            <h3 class="fs-2 me-3 mb-md-1 fw-bold">高雄設計節</h3>
+                            <div class="d-flex d-md-none">
+                                <img src="./assets/images/facebook-24px.svg" class="me-8" alt="facebook">
+                                <p class="w-100">01 JUN &ndash; 31 OCT</p>
+                            </div>
+                        </div>
+
+                        <span class="fs-2 mb-md-2 mb-2">$350</span>
+                        <p class="fs-md-2 mb-md-8 mb-5">
+                            設計大高雄究竟是怎麼一回事？在這「設計」詞彙有點氾濫的年代，或許我們也搞不清楚究竟誰被誰設計了，設計生活？還是被生活設計？而當高雄這座城市建設硬體已相當程度完備時，文化軟實力又該如何輸出？
+                        </p>
+                        <div class="d-flex">
+                            <button class="btn btn-primary me-1 me-md-2">購買票券</button>
+                            <button class="btn btn-outline-primary">收藏展覽</button>
+                        </div>
+                    </div>
+                    <div class="activity-time d-none d-md-block offset-md-1 col-md-1">
+                        <div class="fs-md-2 d-flex mb-md-8 ">01 <br> JUN <br> | <br> 31 <br>OCT</div>
+                        <a href="#">
+                            <img src="./assets/images/facebook-24px.svg" alt="facebook">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="live-review">
+        <div class="container">
+            <h2 class="fs-5 fw-bold mb-2 mb-md-6">直播回顧</h2>
+            <div class="card border-0">
+                <div class="row">
+                    <div class="card-body col-12 col-md-5">
+                        <div class="d-flex align-items-center mb-8">
+                            <h3 class="fs-4 text-white fw-bold border-end border-white pe-3 me-3">開幕對談</h3>
+                            <span class="fs-4 text-white">藝術展演巡禮</span>
+                        </div>
+
+                        <img src="./assets/images/people.png" class="mb-3" alt="people">
+                        <p class="fs-2 text-white mb-2">臺北現代聯合總監｜Ken Hsu</p>
+                        <p class="fs-1 fs-md-2 text-white mb-4">獨家由藝術家、策展人、畫廊總監帶您欣賞台北藝術特展，感受雕塑、展演及當代日常文化之間微妙的關係。</p>
+                        <button class="btn btn-secondary">點此觀看</button>
+                    </div>
+
+                    <img src="./assets/images/people2.png" class="d-none d-md-block col-md-7" alt="people2">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="see-more">
+        <div class="container">
+            <h2 class="fs-5 fw-bold mb-2 mb-md-6">猜你也喜歡...</h2>
+            <!-- Swiper -->
+            <div class="swiper-container mySwiper d-sm-none d-md-block">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card border-0">
+                            <div class="ratio ratio-1x1 mb-2 mb-md-1">
+                                <img src="./assets/images/7.jpg" alt="">
+                            </div>
+                            <div class="card-body p-0">
+                                <h3 class="fs-2 fw-bold mb-1">No.22 線上設計展</h3>
+                                <span class="fs-2">$350</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card border-0">
+                            <div class="ratio ratio-1x1 mb-2 mb-md-1">
+                                <img src="./assets/images/8.jpg" alt="">
+                            </div>
+                            <div class="card-body p-0">
+                                <h3 class="fs-2 fw-bold mb-1">No.22 線上設計展</h3>
+                                <span class="fs-2">$350</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card border-0">
+                            <div class="ratio ratio-1x1 mb-2 mb-md-1">
+                                <img src="./assets/images/9.jpg" alt="">
+                            </div>
+                            <div class="card-body p-0">
+                                <h3 class="fs-2 fw-bold mb-1">No.22 線上設計展</h3>
+                                <span class="fs-2">$350</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-container mySwiper d-md-none  d-sm-block">
+                <div class="card border-0 w-100 mb-4">
+                    <div class="ratio ratio-1x1 mb-2 mb-md-1">
+                        <img src="./assets/images/7.jpg" alt="">
+                    </div>
+                    <div class="card-body p-0">
+                        <h3 class="fs-2 fw-bold mb-1">No.22 線上設計展</h3>
+                        <span class="fs-2">$350</span>
+                    </div>
+                </div>
+                <div class="card border-0 w-10 mb-4">
+                    <div class="ratio ratio-1x1 mb-2 mb-md-1">
+                        <img src="./assets/images/8.jpg" alt="">
+                    </div>
+                    <div class="card-body p-0">
+                        <h3 class="fs-2 fw-bold mb-1">No.22 線上設計展</h3>
+                        <span class="fs-2">$350</span>
+                    </div>
+                </div>
+                <div class="card border-0 w-100 mb-4">
+                    <div class="ratio ratio-1x1 mb-2 mb-md-1">
+                        <img src="./assets/images/9.jpg" alt="">
+                    </div>
+                    <div class="card-body p-0">
+                        <h3 class="fs-2 fw-bold mb-1">No.22 線上設計展</h3>
+                        <span class="fs-2">$350</span>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+</main>

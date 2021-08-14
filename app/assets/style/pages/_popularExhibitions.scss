@@ -1,0 +1,54 @@
+main {
+  padding: 20px 0 24px 0;
+  @include media-breakpoint-up(md) {
+    padding: 60px 0;
+  }
+}
+
+.activity-time {
+  @include media-breakpoint-up(md) {
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.popular-exhibitions {
+  margin-bottom: 60px;
+  .card {
+    padding: 24px 15px;
+    border-radius: 0;
+    @include media-breakpoint-up(md) {
+      padding: 0;
+    }
+    .card-body {
+      padding-bottom: 0;
+      padding-top: 8px;
+      @include media-breakpoint-up(md) {
+        padding: 40px 9px;
+      }
+    }
+    img {
+      object-fit: cover;
+    }
+  }
+}
+.live-review {
+  margin-bottom: 60px;
+  .card {
+    background-color: #190014cc;
+    border-radius: 0;
+    padding-left: 24px;
+  }
+  .card-body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  button {
+    padding: 10px 38px;
+  }
+}
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
