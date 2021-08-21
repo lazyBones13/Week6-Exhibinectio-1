@@ -1,0 +1,15 @@
+@include media-breakpoint-up(md) {
+  $num: 10;
+  @while $num > 0 {
+    .fs-md-#{$num} {
+      font-size: $num * 4px !important;
+      $num: $num - 1;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .fw-md-bold {
+    font-weight: bold;
+  }
+}

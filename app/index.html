@@ -5,218 +5,184 @@ engine: ejs
 current: index
 ---
 
-<main>
-    <section class="popular-exhibitions">
+
+<section>
+    <div class="header-banner d-flex align-items-center">
         <div class="container">
-            <h2 class="fs-5 fw-bold mb-2 mb-md-6">熱門特展</h2>
-            <div class="card bg-light mb-4 mb-md-5 border-0">
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <div class="ratio ratio-1x1">
-                            <img src="./assets/images/1.jpg" alt="">
-                        </div>
-                    </div>
-
-                    <div class="card-body col-12 col-md-6">
-                        <div class="d-md-flex flex-md-column justify-content-md-end">
-                            <div>
-                                <div class="d-flex align-items-center mb-1">
-                                    <h3 class="fs-2 me-3 mb-md-1 fw-bold">2020 台味設計展</h3>
-                                    <div class="d-flex d-md-none">
-                                        <img src="./assets/images/facebook-24px.svg" class="me-8" alt="facebook">
-                                        <p class="w-100">01 JUN &ndash; 31 OCT</p>
-                                    </div>
-                                </div>
-
-                                <span class="fs-2 mb-md-2 mb-2">$350</span>
-                                <p class="fs-md-2  mb-5">
-                                    一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
-                                </p>
-                            </div>
-                            <div class="d-flex">
-                                <button class="btn btn-primary me-1 me-md-2">購買票券</button>
-                                <button class="btn btn-outline-primary">收藏展覽</button>
-                            </div>
-                        </div>
-
-
-                    </div>
-                    <div class="activity-time d-none d-md-block offset-md-1 col-md-1">
-                        <div class="fs-md-2 d-flex mb-md-8 ">01 <br> JUN <br> | <br> 31 <br>OCT</div>
-                        <a href="#">
-                            <img src="./assets/images/facebook-24px.svg" alt="facebook">
-                        </a>
+            <div class="row">
+                <div class="col-12 col-md-4 offset-md-1">
+                    <h2 class="title fs-md-8 fs-5 text-white fw-bold">台北當代藝術展</h2>
+                    <div class="date fs-md-5 fs-2 text-white fw-bold mb-3">01 JUN - 31 OCT</div>
+                    <div class="d-flex">
+                        <button class="btn btn-secondary btn-2xl w-50 me-3 me-md-2">購買票券</button>
+                        <button class="btn btn-outline-light btn-2xl w-50">詳細資訊</button>
                     </div>
                 </div>
             </div>
-            <div class="card bg-light mb-4 mb-md-5 border-0">
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <div class="ratio ratio-1x1">
-                            <img src="./assets/images/2.jpg" alt="">
-                        </div>
-                    </div>
+        </div>
+    </div>
+    <div class="nav-scroller border border-dark">
+        <nav class="container nav d-flex justify-content-unset justify-content-md-center text-dark"
+            aria-label="Secondary navigation">
+            <a class="nav-link link-dark my-2" aria-current="page" href="javascript:;">音樂</a>
+            <a class="nav-link link-dark my-2" href="#">戲劇</a>
+            <a class="nav-link link-dark my-2" href="./products.html">設計</a>
+            <a class="nav-link link-dark my-2" href="javascript:;">藝術</a>
+            <a class="nav-link link-dark my-2" href="javascript:;">美食</a>
+            <a class="nav-link link-dark my-2" href="javascript:;">旅遊</a>
+            <a class="nav-link link-dark my-2" href="javascript:;">電影</a>
+            <a class="nav-link link-dark my-2" href="javascript:;">親子</a>
+            <a class="nav-link link-dark my-2" href="javascript:;">期間限定</a>
+        </nav>
+    </div>
+</section>
 
-                    <div class="card-body col-12 col-md-6">
-                        <div class="d-flex align-items-center mb-1">
-                            <h3 class="fs-2 me-3 mb-md-1 fw-bold">No.22 線上設計展</h3>
+<!-- 熱門特展 -->
+<section class="py-md-13 py-5">
+    <div class="container">
+        <h2 class="fs-md-8 fs-5 fw-bold mb-2 mb-md-6">熱門特展</h2>
+        <div class="card bg-light mb-4 mb-md-5 border-0 rounded-0 py-6 py-md-0 px-4 px-md-0">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="ratio ratio-1x1">
+                        <a href="./info.html"><img src="./assets/images/1.jpg" class="h-100" alt=""></a>
+                    </div>
+                </div>
+
+                <div
+                    class="card-body col-12 col-md-6 d-md-flex flex-md-column justify-content-md-between py-md-10 pb-0">
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <h3 class="fs-md-5 fs-2 mb-md-1 fw-bold">2020 台味設計展</h3>
                             <div class="d-flex d-md-none">
-                                <img src="./assets/images/facebook-24px.svg" class="me-8" alt="facebook">
-                                <p class="w-100">01 JUN &ndash; 31 OCT</p>
+                                <img src="./assets/images/facebook-24px.svg" class="me-9" alt="facebook">
+                                <p>01 JUN &ndash; 31 OCT</p>
                             </div>
                         </div>
 
-                        <span class="fs-2 mb-md-2 mb-2">$350</span>
-                        <p class="fs-md-2 mb-md-8 mb-5">
+                        <span class="fs-md-5 fs-2 mb-md-2 mb-2">$350</span>
+                        <p class="fs-md-5  mb-5">
+                            一年一度的台味設計展由經濟部工業局主辦、台灣創意設計中心執行，每年，針對在地生活、文化及產業發展特色，運用設計思考詮釋新時代的意涵，並以展覽呈現在地設計。
+                        </p>
+                    </div>
+
+                    <div class="d-flex">
+                        <button class="btn btn-primary me-1 me-md-2">購買票券</button>
+                        <button class="btn btn-outline-primary">收藏展覽</button>
+                    </div>
+                </div>
+
+                <div
+                    class="activity-time d-none d-md-block offset-md-1 col-md-1 d-md-flex flex-md-column justify-content-md-between py-md-10 px-md-5">
+                    <div class="fs-md-5 d-flex mb-md-8 fw-md-bold">01 <br> JUN <br> | <br> 31 <br>OCT</div>
+                    <a href="#">
+                        <img src="./assets/images/facebook-24px.svg" alt="facebook">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-light mb-4 mb-md-5 border-0 rounded-0 py-6 py-md-0 px-4 px-md-0">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="ratio ratio-1x1">
+                        <img src="./assets/images/2.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="card-body col-12 col-md-6 d-md-flex flex-md-column justify-content-md-between py-md-10">
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <h3 class="fs-md-5 fs-2 me-3 mb-md-1 fw-bold">No.22 線上設計展</h3>
+                            <div class="d-flex d-md-none">
+                                <img src="./assets/images/facebook-24px.svg" class="me-9" alt="facebook">
+                                <p>01 JUN &ndash; 31 OCT</p>
+                            </div>
+                        </div>
+
+                        <span class="fs-md-5 fs-2 mb-md-2 mb-2">$350</span>
+                        <p class="fs-md-5  mb-5">
                             這是一個專屬於設計系畢業生的展覽，沒有華麗的名號、沒有浮誇的獎賞。讓我們用作品與理念，去碰撞真實世界裡的各種問題，創造更多美好的人事物。讓這個地球、這個世界變成每一個人心目中的理想鄉。
                         </p>
-                        <div class="d-flex">
-                            <button class="btn btn-primary me-1 me-md-2">購買票券</button>
-                            <button class="btn btn-outline-primary">收藏展覽</button>
-                        </div>
-                    </div>
-                    <div class="activity-time d-none d-md-block offset-md-1 col-md-1">
-                        <div class="fs-md-2 d-flex mb-md-8 ">01 <br> JUN <br> | <br> 31 <br>OCT</div>
-                        <a href="#">
-                            <img src="./assets/images/facebook-24px.svg" alt="facebook">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="card bg-light border-0">
-                <div class="row">
-                    <div class="col-12 col-md-4">
-                        <div class="ratio ratio-1x1">
-                            <img src="./assets/images/3.jpg" alt="">
-                        </div>
                     </div>
 
-                    <div class="card-body col-12 col-md-6">
-                        <div class="d-flex align-items-center mb-1">
-                            <h3 class="fs-2 me-3 mb-md-1 fw-bold">高雄設計節</h3>
+                    <div class="d-flex">
+                        <button class="btn btn-primary me-1 me-md-2">購買票券</button>
+                        <button class="btn btn-outline-primary">收藏展覽</button>
+                    </div>
+                </div>
+
+                <div
+                    class="activity-time d-none d-md-block offset-md-1 col-md-1 d-md-flex flex-md-column justify-content-md-between py-md-10 px-md-5">
+                    <div class="fs-md-5 d-flex mb-md-8 fw-md-bold">01 <br> JUN <br> | <br> 31 <br>OCT</div>
+                    <a href="#">
+                        <img src="./assets/images/facebook-24px.svg" alt="facebook">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card bg-light mb-4 mb-md-5 border-0 rounded-0 py-6 py-md-0 px-4 px-md-0">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="ratio ratio-1x1">
+                        <img src="./assets/images/3.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="card-body col-12 col-md-6 d-md-flex flex-md-column justify-content-md-between py-md-10">
+                    <div>
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <h3 class="fs-md-5 fs-2 me-3 mb-md-1 fw-bold">高雄設計節</h3>
                             <div class="d-flex d-md-none">
-                                <img src="./assets/images/facebook-24px.svg" class="me-8" alt="facebook">
-                                <p class="w-100">01 JUN &ndash; 31 OCT</p>
+                                <img src="./assets/images/facebook-24px.svg" class="me-9" alt="facebook">
+                                <p>01 JUN &ndash; 31 OCT</p>
                             </div>
                         </div>
 
-                        <span class="fs-2 mb-md-2 mb-2">$350</span>
-                        <p class="fs-md-2 mb-md-8 mb-5">
+                        <span class="fs-md-5 fs-2 mb-md-2 mb-2">$350</span>
+                        <p class="fs-md-5  mb-5">
                             設計大高雄究竟是怎麼一回事？在這「設計」詞彙有點氾濫的年代，或許我們也搞不清楚究竟誰被誰設計了，設計生活？還是被生活設計？而當高雄這座城市建設硬體已相當程度完備時，文化軟實力又該如何輸出？
                         </p>
-                        <div class="d-flex">
-                            <button class="btn btn-primary me-1 me-md-2">購買票券</button>
-                            <button class="btn btn-outline-primary">收藏展覽</button>
-                        </div>
                     </div>
-                    <div class="activity-time d-none d-md-block offset-md-1 col-md-1">
-                        <div class="fs-md-2 d-flex mb-md-8 ">01 <br> JUN <br> | <br> 31 <br>OCT</div>
-                        <a href="#">
-                            <img src="./assets/images/facebook-24px.svg" alt="facebook">
-                        </a>
+
+                    <div class="d-flex">
+                        <button class="btn btn-primary me-1 me-md-2">購買票券</button>
+                        <button class="btn btn-outline-primary">收藏展覽</button>
                     </div>
+                </div>
+
+                <div
+                    class="activity-time d-none d-md-block offset-md-1 col-md-1 d-md-flex flex-md-column justify-content-md-between py-md-10 px-md-5">
+                    <div class="fs-md-5 d-flex mb-md-8 fw-md-bold">01 <br> JUN <br> | <br> 31 <br>OCT</div>
+                    <a href="#">
+                        <img src="./assets/images/facebook-24px.svg" alt="facebook">
+                    </a>
                 </div>
             </div>
         </div>
+    </div>
+</section>
 
-    </section>
-
-    <section class="live-review">
-        <div class="container">
-            <h2 class="fs-5 fw-bold mb-2 mb-md-6">直播回顧</h2>
-            <div class="card border-0">
-                <div class="row">
-                    <div class="card-body col-12 col-md-5">
-                        <div class="d-flex align-items-center mb-8">
-                            <h3 class="fs-4 text-white fw-bold border-end border-white pe-3 me-3">開幕對談</h3>
-                            <span class="fs-4 text-white">藝術展演巡禮</span>
-                        </div>
-
-                        <img src="./assets/images/people.png" class="mb-3" alt="people">
-                        <p class="fs-2 text-white mb-2">臺北現代聯合總監｜Ken Hsu</p>
-                        <p class="fs-1 fs-md-2 text-white mb-4">獨家由藝術家、策展人、畫廊總監帶您欣賞台北藝術特展，感受雕塑、展演及當代日常文化之間微妙的關係。</p>
-                        <button class="btn btn-secondary">點此觀看</button>
+<!-- 直播回顧 -->
+<section class="live-review">
+    <div class="container">
+        <h2 class="fs-md-8 fs-5 fw-bold mb-2 mb-md-6">直播回顧</h2>
+        <div class="card bg-tertiary border-0 rounded-0 ps-6">
+            <div class="row">
+                <div class="card-body col-12 col-md-5 ps-md-6 py-10">
+                    <div class="d-flex align-items-center mb-8">
+                        <h3 class="fs-md-7 fs-4 text-white fw-bold border-end border-white pe-3 me-3">開幕對談</h3>
+                        <span class="fs-md-7 fs-4 text-white">藝術展演巡禮</span>
                     </div>
 
-                    <img src="./assets/images/people2.png" class="d-none d-md-block col-md-7" alt="people2">
-
+                    <img src="./assets/images/people.png" class="mb-3" alt="people">
+                    <p class="fs-md-5 fs-2 text-white mb-2">臺北現代聯合總監｜Ken Hsu</p>
+                    <p class="fs-md-5 text-white mb-4">獨家由藝術家、策展人、畫廊總監帶您欣賞台北藝術特展，感受雕塑、展演及當代日常文化之間微妙的關係。</p>
+                    <button class="btn btn-secondary btn-xl">點此觀看</button>
                 </div>
+
+                <img src="./assets/images/people2.png" class="d-none d-md-block col-md-7" alt="people2">
+
             </div>
         </div>
-    </section>
-
-    <section class="see-more">
-        <div class="container">
-            <h2 class="fs-5 fw-bold mb-2 mb-md-6">猜你也喜歡...</h2>
-            <!-- Swiper -->
-            <div class="swiper-container mySwiper d-sm-none d-md-block">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="card border-0">
-                            <div class="ratio ratio-1x1 mb-2 mb-md-1">
-                                <img src="./assets/images/7.jpg" alt="">
-                            </div>
-                            <div class="card-body p-0">
-                                <h3 class="fs-2 fw-bold mb-1">No.22 線上設計展</h3>
-                                <span class="fs-2">$350</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card border-0">
-                            <div class="ratio ratio-1x1 mb-2 mb-md-1">
-                                <img src="./assets/images/8.jpg" alt="">
-                            </div>
-                            <div class="card-body p-0">
-                                <h3 class="fs-2 fw-bold mb-1">No.22 線上設計展</h3>
-                                <span class="fs-2">$350</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="card border-0">
-                            <div class="ratio ratio-1x1 mb-2 mb-md-1">
-                                <img src="./assets/images/9.jpg" alt="">
-                            </div>
-                            <div class="card-body p-0">
-                                <h3 class="fs-2 fw-bold mb-1">No.22 線上設計展</h3>
-                                <span class="fs-2">$350</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-container mySwiper d-md-none  d-sm-block">
-                <div class="card border-0 w-100 mb-4">
-                    <div class="ratio ratio-1x1 mb-2 mb-md-1">
-                        <img src="./assets/images/7.jpg" alt="">
-                    </div>
-                    <div class="card-body p-0">
-                        <h3 class="fs-2 fw-bold mb-1">No.22 線上設計展</h3>
-                        <span class="fs-2">$350</span>
-                    </div>
-                </div>
-                <div class="card border-0 w-10 mb-4">
-                    <div class="ratio ratio-1x1 mb-2 mb-md-1">
-                        <img src="./assets/images/8.jpg" alt="">
-                    </div>
-                    <div class="card-body p-0">
-                        <h3 class="fs-2 fw-bold mb-1">No.22 線上設計展</h3>
-                        <span class="fs-2">$350</span>
-                    </div>
-                </div>
-                <div class="card border-0 w-100 mb-4">
-                    <div class="ratio ratio-1x1 mb-2 mb-md-1">
-                        <img src="./assets/images/9.jpg" alt="">
-                    </div>
-                    <div class="card-body p-0">
-                        <h3 class="fs-2 fw-bold mb-1">No.22 線上設計展</h3>
-                        <span class="fs-2">$350</span>
-                    </div>
-                </div>
-            </div>
-
-
-        </div>
-    </section>
-</main>
+    </div>
+</section>

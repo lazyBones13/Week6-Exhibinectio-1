@@ -1,0 +1,21 @@
+.active {
+  padding-bottom: 4px;
+  border-bottom: 2px solid $secondary;
+}
+
+@include media-breakpoint-up(md) {
+  .product-info {
+    &-time {
+      position: absolute;
+      color: $white;
+      top: 80px;
+      right: 40px;
+    }
+    &-banner {
+      height: 400px;
+    }
+    .ticket-num {
+      border-right: 1px solid $dark;
+    }
+  }
+}

@@ -3,6 +3,16 @@
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 
 @import './config/base';
+
+@import './until/spacing';
+@import './until/text';
+
+@import './components/button';
+
+@import './helpers/swiper';
+
 @import './layout/layout';
 
-@import './pages/popularExhibitions';
+@import './pages/cartButton';
+@import './pages/checkout';
+@import './pages/product';

@@ -16,19 +16,21 @@
 
 <body>
   <header>
-    <nav class="border border-dark">
+    <nav>
       <div class="container">
         <div class="row align-items-center">
           <div class="col-8 offset-2 col-md-4 offset-md-4 text-center">
-            <h1 class="fs-3 mb-0"><a href="#" class="text-primary d-block py-7">EXHIBINECTION</a></h1>
+            <h1 class="fs-md-6 fs-3 mb-0"><a href="index.html"
+                class="text-primary d-block py-md-5 py-4">EXHIBINECTION</a></h1>
           </div>
           <div class="col-2 col-md-4">
             <ul class="d-flex list-unstyled justify-content-end mb-0">
-              <li><a href="#" class="d-block px-4 py-5 d-none d-md-block">Sign in</a>
+              <li><a href="#" class="d-block px-4 py-4 d-none d-md-block">Sign in</a>
               </li>
-              <li><a href="#" class="d-block px-4 py-5 d-none d-md-block">Sign in</a>
+              <li><a href="#" class="d-block px-4 py-4 d-none d-md-block">Sign in</a>
               </li>
-              <li><a href="#" class="link-dark d-block ps-4 py-5 position-relative">
+              <li><a href="#" class="link-dark d-block ps-4 py-4 position-relative" data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop">
                   <span class="material-icons num-count">
                     confirmation_number
                   </span>
@@ -39,56 +41,165 @@
         </div>
       </div>
     </nav>
-    <div class="header-banner d-flex align-items-center">
+  </header>
+
+
+  <%- contents %>
+
+    <!-- 猜你也喜歡 -->
+    <section class="py-md-13 py-6">
       <div class="container">
+        <h2 class="fs-md-8 fs-5 fw-bold mb-2 mb-md-6">猜你也喜歡...</h2>
+        <!-- Swiper -->
         <div class="row">
-          <div class="col-12 col-md-4 offset-md-1">
-            <h2 class="title fs-5 text-white fw-bold lh-base">台北當代藝術展</h2>
-            <div class="date fs-2 text-white fw-bold mb-3">01 JUN - 31 OCT</div>
-            <div class="d-flex">
-              <button class="btn btn-secondary w-50 me-3 me-md-2">購買票券</button>
-              <button class="btn btn-outline-light w-50">詳細資訊</button>
+          <div class="col-12 col-md-11 offset-md-1">
+            <div class="swiper-container mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="card w-100 border-0">
+                    <img
+                      src="https://images.unsplash.com/photo-1492087368735-957f2d176504?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=960&q=80"
+                      class="card-img-top mb-1" alt="...">
+                    <div class="card-body p-0">
+                      <h5 class="card-title fs-md-5 fs-2 fw-bold mb-1">No.22 線上設計展</h5>
+                      <p class="card-text fs-md-5 fs-2">$350</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card w-100 border-0">
+                    <img
+                      src="https://images.unsplash.com/photo-1567722681579-c671cabd2810?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80"
+                      class="card-img-top mb-1" alt="...">
+                    <div class="card-body p-0">
+                      <h5 class="card-title fs-md-5 fs-2 fw-bold mb-1">No.22 線上設計展</h5>
+                      <p class="card-text fs-md-5 fs-2">$350</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card w-100 border-0">
+                    <img
+                      src="https://images.unsplash.com/photo-1578402025217-920675beb3c3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1065&q=80"
+                      class="card-img-top mb-1" alt="...">
+                    <div class="card-body p-0">
+                      <h5 class="card-title fs-md-5 fs-2 fw-bold mb-1">No.22 線上設計展</h5>
+                      <p class="card-text fs-md-5 fs-2">$350</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="nav-scroller border border-dark">
-      <nav class="container nav d-flex justify-content-unset justify-content-md-center text-dark"
-        aria-label="Secondary navigation">
-        <a class="nav-link link-dark my-2" aria-current="page" href="#">音樂</a>
-        <a class="nav-link link-dark my-2" href="#">戲劇</a>
-        <a class="nav-link link-dark my-2" href="#">設計</a>
-        <a class="nav-link link-dark my-2" href="#">藝術</a>
-        <a class="nav-link link-dark my-2" href="#">美食</a>
-        <a class="nav-link link-dark my-2" href="#">旅遊</a>
-        <a class="nav-link link-dark my-2" href="#">電影</a>
-        <a class="nav-link link-dark my-2" href="#">親子</a>
-        <a class="nav-link link-dark my-2" href="#">期間限定</a>
-      </nav>
-    </div>
-  </header>
+    </section>
 
-  <%- contents %>
+    <!-- offcanvas -->
+    <div class="modal right fade modal-dialog modal-dialog-scrollable" id="staticBackdrop" data-bs-backdrop="static"
+      data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content bg-black">
+          <div class="modal-header pt-5 pt-md-8 px-md-8">
+            <h5 class="modal-title fs-5 text-white" id="staticBackdropLabel">Cart List</h5>
+            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body px-md-8">
+            <div class="card border-0 d-flex mb-3">
+              <a href="#" class="d-block"><img src="./assets/images/close_black_24dp.svg" class="cartDelete" alt=""></a>
+              <div class="d-flex">
+                <div class="me-4">
+                  <img src="./assets/images/1.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="me-5">
+                  <div class="card-body p-0">
+                    <h2 class="fs-1 fw-bold">2020 台味設計展</h2>
+                    <p>01 JUN — 31 OCT</p>
+                    <p class="text-dark mb-3">全票</p>
+                    <p class="fs-2 fw-bold">NT$350</p>
+                  </div>
+                </div>
+                <div class=" d-flex flex-column-reverse align-items-end align-items-md-center flex-md-row ps-0">
+                  <span class="down me-md-3 fw-bold"><a href="#" class="d-block p-2">&ndash;</a></span>
+                  <span class="number me-md-3 fw-bold">01</span>
+                  <span class="plus fw-bold"><a href="#" class="d-block p-2">&plus;</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="card border-0 d-flex mb-3">
+              <a href="#" class="d-block"><img src="./assets/images/close_black_24dp.svg" class="cartDelete" alt=""></a>
+              <div class="d-flex">
+                <div class="me-4">
+                  <img src="./assets/images/2.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="me-5">
+                  <div class="card-body p-0">
+                    <h2 class="fs-1 fw-bold">2020 台味設計展</h2>
+                    <p>01 JUN — 31 OCT</p>
+                    <p class="text-dark mb-3">全票</p>
+                    <p class="fs-2 fw-bold">NT$350</p>
+                  </div>
+                </div>
+                <div class="d-flex flex-column-reverse align-items-end align-items-md-center flex-md-row ps-0">
+                  <span class="down me-md-3 fw-bold"><a href="#" class="d-block p-2">&ndash;</a></span>
+                  <span class="number me-md-3 fw-bold">01</span>
+                  <span class="plus fw-bold"><a href="#" class="d-block p-2">&plus;</a></span>
+                </div>
+              </div>
+            </div>
+            <div class="card border-0 d-flex mb-3">
+              <a href="#" class="d-block"><img src="./assets/images/close_black_24dp.svg" class="cartDelete" alt=""></a>
+              <div class="d-flex">
+                <div class="me-4">
+                  <img src="./assets/images/3.jpg" class="card-img-top" alt="...">
+                </div>
+                <div class="me-5">
+                  <div class="card-body p-0">
+                    <h2 class="fs-1 fw-bold">2020 台味設計展</h2>
+                    <p>01 JUN — 31 OCT</p>
+                    <p class="text-dark mb-3">全票</p>
+                    <p class="fs-2 fw-bold">NT$350</p>
+                  </div>
+                </div>
+                <div class="d-flex flex-column-reverse align-items-end align-items-md-center flex-md-row ps-0">
+                  <span class="down me-md-3 fw-bold"><a href="#" class="d-block p-2">&ndash;</a></span>
+                  <span class="number me-md-3 fw-bold">01</span>
+                  <span class="plus fw-bold"><a href="#" class="d-block p-2">&plus;</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer d-flex justify-content-between pb-7 pb-md-6 px-md-8">
+            <div class="d-flex">
+              <p class="text-white fs-2 me-5">小計</p>
+              <span class="text-white fs-2">NT$1050</span>
+            </div>
+            <a type="button" href="./cartPersonInfo.html" class="btn bg-white text-primary">前往結帳</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <footer>
       <div class="footer-banner d-flex align-items-end pb-6">
         <div class="container">
           <div class="row">
             <div class="col-md-4">
-              <p class="fs-3 fs-md-5 text-white fw-bold mb-5 mb-md-3">想收到最新消息嗎？<br> 快訂閱我們！</p>
+              <p class="fs-md-8 fs-3 text-white fw-bold mb-5 mb-md-3">想收到最新消息嗎？<br> 快訂閱我們！</p>
               <div class="input-group">
                 <input type="text" class="form-control" placeholder="輸入您的電子信箱" aria-label="Recipient's username"
                   aria-describedby="button-addon2">
-                <button class="btn btn-secondary footer-subscribe" type="button" id="button-addon2">訂閱</button>
+                <button class="btn btn-secondary btn-2xl" type="button" id="button-addon2">訂閱</button>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="footer-white container d-md-flex justify-content-md-between py-4 py-md-7">
+      <div class="footer-white container d-md-flex justify-content-md-between py-4 py-md-0">
         <div class="d-md-flex align-items-md-center">
-          <p class="me-md-2 fs-3">EXHIBINECTION</p>
+          <a href="./index.html">
+            <p class="fs-md-6 fs-2 me-md-2 text-black py-md-5">EXHIBINECTION</p>
+          </a>
           <p>© 2020. All Rights Reserved.</p>
         </div>
 
