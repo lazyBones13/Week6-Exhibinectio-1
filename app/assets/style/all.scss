@@ -1,10 +1,11 @@
+@import './config/font';
+
 @import '../../../node_modules/bootstrap/scss/functions';
 @import './helpers/variables';
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 
 @import './config/base';
 
-@import './until/spacing';
 @import './until/text';
 
 @import './components/button';

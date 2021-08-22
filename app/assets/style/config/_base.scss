@@ -1,8 +1,8 @@
 /* 全站設定 */
 
 body {
-  font-family: 'Lato', sans-serif;
-  color: $black;
+  font-family: 'Roboto', sans-serif;
+  color: #000;
 }
 a {
   color: $dark;
@@ -39,6 +39,7 @@ h5,
 .h5,
 h6,
 .h6 {
+  font-family: 'Noto Sans CJK TC Bold', sans-serif;
   margin-bottom: 0;
   line-height: 1.5;
 }

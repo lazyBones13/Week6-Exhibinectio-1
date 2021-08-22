@@ -1,62 +1,305 @@
 ---
-title: orderFinish
-layout: ./app/layout.ejs
+title: 確認訂單
+layout: ./app/checkout.ejs
 engine: ejs
-current: orderFinish
+current: cart
 ---
 
-<div class="container">
-    <div class="row timeline-section">
-        <div class="col-md">
-            <div class="timeline-pointer">
-                <p class="mt-1">確認訂單</p>
-            </div>
-        </div>
-        <div class="col">
-            <div class="timeline-pointer">
-                <p class="mt-1">填寫訂購資訊</p>
-            </div>
-        </div>
-        <div class="col">
-            <div class="timeline-pointer">
-                <p class="mt-1">填寫付款資訊</p>
-            </div>
-        </div>
-        <div class="col">
-            <div class="timeline-pointer">
-                <p class="mt-1">完成訂購</p>
-            </div>
+<section class="container">
+    <!-- 進度條 -->
+    <div class="row my-8">
+        <div class="col-md-8">
+            <ul class="timeline list-unstyled d-flex justify-content-around mb-0">
+                <li class="timeline-bar fw-bold timeline-done">確認訂單</li>
+                <li class="timeline-bar">填寫訂購資訊</li>
+                <li class="timeline-bar">填寫付款資訊</li>
+                <li class="timeline-bar">完成訂購</li>
+            </ul>
         </div>
     </div>
-</div>
-
-<section class="checkOrder container">
-    <div class="row">
-        <div class="col-12 col-lg-6">
-            <div class="card border-0 d-flex mb-3">
-                <a href="#" class="d-block"><img src="./assets/images/close_black_24dp.svg" class="cartDelete"
-                        alt=""></a>
-                <div class="d-flex">
-                    <div class="me-4">
-                        <img src="./assets/images/1.jpg" class="card-img-top" alt="...">
-                    </div>
-                    <div class="me-5">
-                        <div class="card-body p-0">
-                            <h2 class="fs-1 fw-bold">2020 台味設計展</h2>
-                            <p>01 JUN — 31 OCT</p>
-                            <p class="text-dark mb-3">全票</p>
-                            <p class="fs-2 fw-bold">NT$350</p>
+    <ul class="row g-0">
+        <!-- <li class="card p-0 border-0 col-md-8">
+            <div class="card-body p-0">
+                <div class="d-none d-md-flex justify-content-center align-items-center">
+                    <div class="row">
+                        <img src="./assets/images/1.jpg" alt="台味設計展" class="col-md-4 img img__checkout me-3.75">
+                        <div class="col-md-8 d-flex flex-column justify-content-center">
+                            <h3 class="fw-bold mb-md-1">2020 台味設計展</h3>
+                            <p class="mb-md-1">01 JUN — 31 OCT</p>
+                            <p class="text-dark">全票</p>
+                            <div>
+                                <p class="fw-bold fs-md-5">NT$350</p>
+                                <div class="d-flex">
+                                    <div class="d-flex flex-column flex-md-row justify-center items-center">
+                                        <button type="button" class="border-0 bg-transparent order-3 order-md-0">
+                                            <span class="material-icons-outlined">
+                                                remove
+                                            </span>
+                                        </button>
+                                        <h3 class="fs-md-5 fw-bold py-0.5 py-md-0 px-md-2.5 order-2 order-md-0">01</h3>
+                                        <button type="button" class="border-0 bg-transparent order-1 order-md-0">
+                                            <span class="material-icons-outlined">
+                                                add
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <button type="button" type="button" class="btn-close" aria-label="Close"></button>
+                            </div>
                         </div>
+
                     </div>
-                    <div class=" d-flex flex-column-reverse align-items-end align-items-md-center flex-md-row ps-0">
-                        <span class="down me-md-3 fw-bold"><a href="#" class="d-block p-2">&ndash;</a></span>
-                        <span class="number me-md-3 fw-bold">01</span>
-                        <span class="plus fw-bold"><a href="#" class="d-block p-2">&plus;</a></span>
+
+
+
+                </div>
+                <div class="d-flex d-md-none">
+                    <img src="./assets/images/2.jpg" alt="台味設計展" class="img img__checkout me-3.75">
+                    <div class="w-100">
+                        <div class="d-flex justify-between">
+                            <h3 class="fw-bold">
+                                2020 台味設計展
+                                <br />
+                                <span class="fw-med">01 JUN — 31 OCT</span>
+                            </h3>
+                            <button type="button" type="button" class="btn-close" aria-label="Close"></button>
+                        </div>
+                        <div class="d-flex justify-between">
+                            <p>
+                                <span class="text-gray me-0.5">全票</span>
+                                <span class="fw-bold fs-5">1</span>
+                            </p>
+                            <p class="fw-bold fs-5">NT$350</p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </li> -->
+        <li class="col-12 col-md-8 row p-0 mb-md-5">
+            <img src="./assets/images/1.jpg" class="col-6 col-md-2 g-0" alt="">
+            <div class="d-none d-md-block col-md-3 d-flex align-items-md-center">
+                <div>
+                    <h3 class="fw-bold fs-md-4 mb-1">No.22 線上設計展</h3>
+                    <p class="mb-1">01 JUN — 31 OCT</p>
+                    <p class="text-dark">全票</p>
+                </div>
+            </div>
+            <div class="d-none d-md-block col-md-7 g-0">
+                <div class=" d-flex justify-content-between align-items-center">
+                    <p class="fw-bold fs-md-5">NT$350</p>
+                    <div class="d-flex">
+                        <div class="d-flex">
+                            <button type="button" class="border-0 bg-transparent order-3 order-md-0">
+                                <span class="material-icons-outlined">
+                                    remove
+                                </span>
+                            </button>
+                            <p class="fs-md-5 fw-bold mx-md-3">01</p>
+                            <button type="button" class="border-0 bg-transparent order-1 order-md-0">
+                                <span class="material-icons-outlined">
+                                    add
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <button type="button" type="button" class="btn-close" aria-label="Close"></button>
+                </div>
 
-
+            </div>
+            <!-- RWD -->
+            <div class="col-6 d-md-none pe-0 py-4">
+                <div class="d-flex justify-content-between mb-3">
+                    <h3 class="fw-bold">No.22 線上設計展</h3>
+                    <button type="button" type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+                <p class="mb-3">01 JUN — 31 OCT</p>
+                <div class="d-flex justify-content-between">
+                    <p class="text-dark me-1">全票 <span class="fs-2 fw-bold">1</span></p>
+                    <p class="fs-2 fw-bold">NT$350</p>
+                </div>
+            </div>
+        </li>
+        <li class="col-md-8 row p-0 mb-md-5">
+            <img src="./assets/images/1.jpg" class="col-md-2 g-0" alt="">
+            <div class="col-md-3 d-flex align-items-center">
+                <div>
+                    <h3 class="fw-bold fs-md-4 mb-1">No.22 線上設計展</h3>
+                    <p class="mb-1">01 JUN — 31 OCT</p>
+                    <p class="text-dark">全票</p>
+                </div>
+            </div>
+            <div class="col-md-7 g-0 d-flex justify-content-between align-items-center">
+                <p class="fw-bold fs-md-5">NT$350</p>
+                <div class="d-flex">
+                    <div class="d-flex">
+                        <button type="button" class="border-0 bg-transparent order-3 order-md-0">
+                            <span class="material-icons-outlined">
+                                remove
+                            </span>
+                        </button>
+                        <p class="fs-md-5 fw-bold mx-md-3">01</p>
+                        <button type="button" class="border-0 bg-transparent order-1 order-md-0">
+                            <span class="material-icons-outlined">
+                                add
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <button type="button" type="button" class="btn-close" aria-label="Close"></button>
+            </div>
+        </li>
+        <li class="col-md-8 row p-0">
+            <img src="./assets/images/1.jpg" class="col-md-2 g-0" alt="">
+            <div class="col-md-3 d-flex align-items-center">
+                <div>
+                    <h3 class="fw-bold fs-md-4 mb-1">No.22 線上設計展</h3>
+                    <p class="mb-1">01 JUN — 31 OCT</p>
+                    <p class="text-dark">全票</p>
+                </div>
+            </div>
+            <div class="col-md-7 g-0 d-flex justify-content-between align-items-center">
+                <p class="fw-bold fs-md-5">NT$350</p>
+                <div class="d-flex">
+                    <div class="d-flex">
+                        <button type="button" class="border-0 bg-transparent order-3 order-md-0">
+                            <span class="material-icons-outlined">
+                                remove
+                            </span>
+                        </button>
+                        <p class="fs-md-5 fw-bold mx-md-3">01</p>
+                        <button type="button" class="border-0 bg-transparent order-1 order-md-0">
+                            <span class="material-icons-outlined">
+                                add
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <button type="button" type="button" class="btn-close" aria-label="Close"></button>
+            </div>
+        </li>
+        <!-- <li class="card w-100">
+            <div class="card-body">
+                <div class="d-none d-md-flex justify-between items-center">
+                    <div class="d-flex">
+                        <img src="./assets/images/3.jpg" alt="台味設計展" class="img img__checkout me-3.75">
+                        <div class="me-3.75">
+                            <h3 class="fw-bold">
+                                No.22 線上設計展
+                                <br />
+                                <span class="fw-med">01 JUN — 31 OCT</span>
+                            </h3>
+                            <p>
+                                <span class="text-gray">全票</span>
+                            </p>
+                        </div>
+                    </div>
+                    <p class="fw-bold fs-5">NT$350</p>
+                    <div class="d-flex">
+                        <div class="d-flex flex-column flex-md-row justify-center items-center">
+                            <button type="button" class="border-0 bg-transparent order-3 order-md-0">
+                                <span class="material-icons-outlined">
+                                    remove
+                                </span>
+                            </button>
+                            <h3 class="fs-5 fw-bold py-0.5 py-md-0 px-md-2.5 order-2 order-md-0">01</h3>
+                            <button type="button" class="border-0 bg-transparent order-1 order-md-0">
+                                <span class="material-icons-outlined">
+                                    add
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <button type="button" type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+                <div class="d-flex d-md-none">
+                    <img src="./assets/images/michel-catalisano--a0D9LpcKV8-unsplash.jpg" alt="台味設計展"
+                        class="img img__checkout me-3.75" />
+                    <div class="w-100">
+                        <div class="d-flex justify-between">
+                            <h3 class="fw-bold">
+                                No.22 線上設計展
+                                <br />
+                                <span class="fw-med">01 JUN — 31 OCT</span>
+                            </h3>
+                            <button type="button" type="button" class="btn-close" aria-label="Close"></button>
+                        </div>
+                        <div class="d-flex justify-between">
+                            <p>
+                                <span class="text-gray me-0.5">全票</span>
+                                <span class="fw-bold fs-5">1</span>
+                            </p>
+                            <p class="fw-bold fs-5">NT$350</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="card w-100">
+            <div class="card-body">
+                <div class="d-none d-md-flex justify-between items-center">
+                    <div class="d-flex">
+                        <img src="./assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="台味設計展"
+                            class="img img__checkout me-3.75" />
+                        <div class="me-3.75">
+                            <h3 class="fw-bold">
+                                高雄設計節
+                                <br />
+                                <span class="fw-med">01 JUN — 31 OCT</span>
+                            </h3>
+                            <p>
+                                <span class="text-gray">全票</span>
+                            </p>
+                        </div>
+                    </div>
+                    <p class="fw-bold fs-5">NT$350</p>
+                    <div class="d-flex">
+                        <div class="d-flex flex-column flex-md-row justify-center items-center">
+                            <button type="button" class="border-0 bg-transparent order-3 order-md-0">
+                                <span class="material-icons-outlined">
+                                    remove
+                                </span>
+                            </button>
+                            <h3 class="fs-5 fw-bold py-0.5 py-md-0 px-md-2.5 order-2 order-md-0">01</h3>
+                            <button type="button" class="border-0 bg-transparent order-1 order-md-0">
+                                <span class="material-icons-outlined">
+                                    add
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                    <button type="button" type="button" class="btn-close" aria-label="Close"></button>
+                </div>
+                <div class="d-flex d-md-none">
+                    <img src="./assets/images/moralis-tsai-8xsktFRw28I-unsplash.jpg" alt="台味設計展"
+                        class="img img__checkout me-3.75" />
+                    <div class="w-100">
+                        <div class="d-flex justify-between">
+                            <h3 class="fw-bold">
+                                高雄設計節
+                                <br />
+                                <span class="fw-med">01 JUN — 31 OCT</span>
+                            </h3>
+                            <button type="button" type="button" class="btn-close" aria-label="Close"></button>
+                        </div>
+                        <div class="d-flex justify-between">
+                            <p>
+                                <span class="text-gray me-0.5">全票</span>
+                                <span class="fw-bold fs-5">1</span>
+                            </p>
+                            <p class="fw-bold fs-5">NT$350</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li> -->
+    </ul>
+    <div class="offset-5 col-6 offset-md-8 col-md-4 d-flex flex-column justify-end">
+        <div class="d-flex justify-between mb-1.5">
+            <div class="fs-5">小計</div>
+            <div class="fs-5">NT$1050</div>
         </div>
+    </div>
+    <div class="offset-5 col-6 offset-md-8 col-md-4">
+        <a type="button" class="btn btn-secondary py-1.25 w-100" href="checkout-1.html">下一步</a>
     </div>
 </section>
